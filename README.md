@@ -47,4 +47,5 @@ If you want to use the Node.js backend:
 1. cd backend
 2. npm install
 3. node server.js
+
 The backend will run at: `http://localhost:5000`
