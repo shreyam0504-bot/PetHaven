@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Give a Pet for Adoption | Pet Haven</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="logo-area">
+      <span class="logo-paw">🐾</span>
+      <span class="logo-text">Pet Haven</span>
+    </div>
+
+    <nav class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="pets.html">Available Pets</a>
+      <a href="give-pet.html" class="active">Give a Pet for Adoption</a>
+      <a href="care-tips.html">Pet Care Tips</a>
+      <a href="match-quiz.html">Match Quiz</a>
+      <a href="user-login.html">Login</a>
+      <a href="user-profile.html">My Profile</a>
+      <a href="user-requests.html">My Requests</a>
+      <a href="wishlist.html">Wishlist</a>
+      <a href="compare.html">Compare</a>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="section-header narrow">
+        <h1>Give a pet for adoption</h1>
+        <p>
+          If you can no longer care for your pet, share a few details and we’ll help
+          find them a safe, loving new home.
+        </p>
+      </div>
+
+      <div class="card form-card">
+        <form id="givePetForm" class="form-layout">
+          <div class="form-group">
+            <label for="ownerName">Your Name</label>
+            <input type="text" id="ownerName" required />
+          </div>
+
+          <div class="form-group">
+            <label for="ownerEmail">Email</label>
+            <input type="email" id="ownerEmail" required />
+          </div>
+
+          <div class="form-group">
+            <label for="ownerPhone">Phone (optional)</label>
+            <input type="tel" id="ownerPhone" />
+          </div>
+
+          <div class="form-group">
+            <label for="petName">Pet's Name</label>
+            <input type="text" id="petName" />
+          </div>
+
+          <div class="form-group">
+            <label for="petType">Pet Type</label>
+            <select id="petType">
+              <option>Dog</option>
+              <option>Cat</option>
+              <option>Rabbit</option>
+              <option>Bird</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="petAge">Pet Age</label>
+            <input type="text" id="petAge" placeholder="e.g. 2 yrs" />
+          </div>
+
+          <div class="form-group full-width">
+            <label for="petBreed">Breed (optional)</label>
+            <input type="text" id="petBreed" />
+          </div>
+
+          <div class="form-group full-width">
+            <label for="petStory">Tell us about your pet</label>
+            <textarea id="petStory" rows="3" placeholder="Temperament, routine, health, what they like..."></textarea>
+          </div>
+
+          <div class="form-group full-width">
+            <button type="submit" class="btn primary full-width">
+              Submit details
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <div class="toast" id="givePetSuccess">
+      Thank you! Your pet's details have been recorded. 💛
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Pet Haven · Made with 🐾 for animals</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

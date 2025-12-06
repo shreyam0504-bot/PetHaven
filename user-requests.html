@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Requests | Pet Haven</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page-requests">
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="logo-area">
+      <span class="logo-paw">🐾</span>
+      <span class="logo-text">Pet Haven</span>
+    </div>
+
+    <nav class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="pets.html">Available Pets</a>
+      <a href="give-pet.html">Give a Pet for Adoption</a>
+      <a href="care-tips.html">Pet Care Tips</a>
+      <a href="match-quiz.html">Match Quiz</a>
+      <a href="user-login.html">Login</a>
+      <a href="user-profile.html">My Profile</a>
+      <a href="user-requests.html" class="active">My Requests</a>
+      <a href="wishlist.html">Wishlist</a>
+      <a href="compare.html">Compare</a>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="section-header">
+        <h1>My adoption requests</h1>
+        <p>See the requests you submitted from this browser.</p>
+      </div>
+
+      <div id="adoptionList" class="adoption-list">
+        <!-- Filled by script.js using localStorage for now -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Pet Haven · Made with 🐾 for animals</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

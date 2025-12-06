@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pet Haven | Adopt a Friend</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page-home">
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo-area">
+      <span class="logo-paw">🐾</span>
+      <span class="logo-text">Pet Haven</span>
+    </div>
+
+    <nav class="nav-links">
+      <a href="home.html" class="active">Home</a>
+      <a href="pets.html">Available Pets</a>
+      <a href="give-pet.html">Give a Pet for Adoption</a>
+      <a href="care-tips.html">Pet Care Tips</a>
+      <a href="match-quiz.html">Match Quiz</a>
+      <a href="user-login.html">Login</a>
+      <a href="user-profile.html">My Profile</a>
+      <a href="user-requests.html">My Requests</a>
+      <a href="wishlist.html">Wishlist</a>
+      <a href="compare.html">Compare</a>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="hero-kicker">Trusted Community Pet Shelter</p>
+
+        <h1>
+          Find your<br>
+          <span>forever friend</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Give a second chance to a loving pet. Adopt, don't shop — together we can
+          create more wagging tails and happy purrs.
+        </p>
+
+        <div class="hero-actions">
+          <a href="pets.html" class="btn primary">Browse Available Pets</a>
+          <a href="#why-adopt" class="btn ghost">Why Adopt?</a>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <strong>120+</strong>
+            <span>Happy Adoptions</span>
+          </div>
+          <div>
+            <strong>45</strong>
+            <span>Pets Waiting</span>
+          </div>
+          <div>
+            <strong>5⭐</strong>
+            <span>Community Rated</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Random Pet Hero -->
+      <div class="hero-visual">
+        <div class="hero-pet-card">
+          <img id="hero-img" src="" alt="Pet">
+          <div class="hero-pet-info">
+            <p class="pet-name" id="hero-name"></p>
+            <p class="pet-tagline" id="hero-tag"></p>
+          </div>
+        </div>
+
+        <div class="paw-badges">
+          <span>💛 Vaccinated</span>
+          <span>🏠 Indoor & Outdoor</span>
+          <span>👨‍👩‍👧 Family Friendly</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Adopt Section -->
+    <section id="why-adopt" class="section light">
+      <div class="section-header">
+        <h2>Why adopt from Pet Haven?</h2>
+        <p>Every pet here has a story. Your kindness can give them a new chapter.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>Health & Safety First</h3>
+          <p>All pets are checked by vets, vaccinated and dewormed before they are
+            listed for adoption.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Perfect Match</h3>
+          <p>We help match your lifestyle with the right pet based on energy level,
+            size and temperament.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Lifetime Support</h3>
+          <p>New to pet parenting? We share guides, tips and connect you with local
+            trainers and vets.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section class="section steps">
+      <div class="section-header">
+        <h2>How adoption works</h2>
+        <p>Three simple steps to bring your new best friend home.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step">
+          <span class="step-number">1</span>
+          <h3>Browse pets</h3>
+          <p>Filter by species, age and size to find pets that fit your lifestyle.</p>
+        </div>
+
+        <div class="step">
+          <span class="step-number">2</span>
+          <h3>Send a request</h3>
+          <p>Fill a quick form telling us about your home and experience.</p>
+        </div>
+
+        <div class="step">
+          <span class="step-number">3</span>
+          <h3>Meet & adopt</h3>
+          <p>Visit the shelter, meet your pet, complete paperwork and go home together!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlight Section -->
+    <section class="section highlight">
+      <div class="highlight-inner">
+        <div>
+          <h2>Have a pet to rehome?</h2>
+          <p>
+            Life can change. If you can no longer care for your pet, we’re here to
+            help you find them a kind and responsible new family.
+          </p>
+        </div>
+
+        <a href="give-pet.html" class="btn inverted">Give a Pet for Adoption</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  
+  <!-- Role selection modal -->
+  <div class="role-modal-backdrop" id="roleModal" aria-hidden="true">
+    <div class="role-modal">
+      <h2>Welcome to Pet Haven</h2>
+      <p>Please tell us how you want to continue.</p>
+      <div class="role-actions">
+        <button class="btn primary" id="roleUserBtn">I am a User</button>
+        <button class="btn inverted" id="roleAdminBtn">I am an Admin</button>
+      </div>
+      <p class="role-note">You can always come back to this page and choose again.</p>
+    </div>
+  </div>
+
+<footer class="site-footer">
+    <p>© 2025 Pet Haven · Made with 🐾 for animals</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard | Pet Haven</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page-admin-dashboard">
+  <header class="site-header">
+    <div class="logo-area">
+      <span class="logo-paw">🐾</span>
+      <span class="logo-text">Pet Haven Admin</span>
+    </div>
+
+    <nav class="nav-links">
+      <a href="admin-dashboard.html" class="active">Requests</a>
+      <a href="index.html">Back to site</a>
+      <a href="#" id="adminLogout">Logout</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="section-header">
+        <h1>Adoption requests</h1>
+        <p>Review requests submitted from this browser. Update status, appointments and notes.</p>
+      </div>
+
+      <div id="adminReactRoot"></div>
+      <div id="adminRequests" class="admin-requests">
+        <!-- Requests injected by script.js -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Pet Haven · Admin Panel</p>
+  </footer>
+
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="script.js" defer></script>
+  <script src="admin-react.js" defer></script>
+</body>
+</html>

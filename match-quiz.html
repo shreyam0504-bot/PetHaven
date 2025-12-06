@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Match Quiz | Pet Haven</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page-quiz">
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="logo-area">
+      <span class="logo-paw">🐾</span>
+      <span class="logo-text">Pet Haven</span>
+    </div>
+
+    <nav class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="pets.html">Available Pets</a>
+      <a href="give-pet.html">Give a Pet for Adoption</a>
+      <a href="care-tips.html">Pet Care Tips</a>
+      <a href="match-quiz.html" class="active">Match Quiz</a>
+      <a href="user-profile.html">My Profile</a>
+      <a href="user-requests.html">My Requests</a>
+      <a href="wishlist.html">Wishlist</a>
+      <a href="compare.html">Compare</a>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="section-header">
+        <h1>Find your ideal pet</h1>
+        <p>Answer a few quick questions and we’ll suggest a pet type for you.</p>
+      </div>
+
+      <div class="quiz-card">
+        <form id="quizForm">
+          <div class="form-group">
+            <label>How active is your daily routine?</label>
+            <select id="quizActivity" required>
+              <option value="">Select one</option>
+              <option value="high">Very active, I love going out</option>
+              <option value="medium">Moderately active</option>
+              <option value="low">Mostly at home / calm</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>How much space do you have at home?</label>
+            <select id="quizSpace" required>
+              <option value="">Select one</option>
+              <option value="large">Large house / independent</option>
+              <option value="medium">Apartment with some space</option>
+              <option value="small">Small room / shared space</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Any allergies to fur?</label>
+            <select id="quizAllergy" required>
+              <option value="">Select one</option>
+              <option value="no">No allergies</option>
+              <option value="mild">Mild dust / fur allergy</option>
+              <option value="yes">Strong allergies</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn primary">Get suggestion</button>
+        </form>
+
+        <div id="quizResult" class="quiz-result" style="margin-top:1rem;"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Pet Haven · Made with 🐾 for animals</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
