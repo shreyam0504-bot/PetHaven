@@ -38,7 +38,7 @@ You can run the frontend in two ways:
 This is the best way to run the full project.
 
 **Option B — Open Directly in Browser**  
-Just double-click `home.html` or do Live Server
+Just double-click `home.html`
 All main features (wishlist, compare, quiz, user pages, admin UI) work without any backend.
 
 ### 2. Run with Backend (Optional)
